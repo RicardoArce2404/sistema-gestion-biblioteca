@@ -5,8 +5,8 @@ public class Biblioteca {
   private String nombre;
   private String direccion;
   private int telefono;
-  private Catalogo catalogoLibros;
-  private Catalogo catalogoRevistas;
+  private CatalogoLibros catalogoLibros;
+  private CatalogoRevistas catalogoRevistas;
 
   public Biblioteca(String pNombre, String pDireccion, int pTelefono) {
     setNombre(pNombre);
@@ -36,5 +36,13 @@ public class Biblioteca {
 
   public void setTelefono(int pTelefono) {
     telefono = pTelefono;
+  }
+
+  public CatalogoLibros geCatalogoLibros() {
+    return catalogoLibros;
+  }
+
+  public CatalogoRevistas geCatalogoRevistas() {
+      return catalogoRevistas;
   }
 }
