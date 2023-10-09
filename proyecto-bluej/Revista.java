@@ -1,33 +1,48 @@
-
 /**
- * Write a description of class Revista here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Representación de una revista de una biblioteca
  */
-public class Revista
-{
-    // instance variables - replace the example below with your own
-    private int x;
+public class Revista {
+  private String titulo;
+  private String editor;
+  private int issn;
+  private int stock;
 
-    /**
-     * Constructor for objects of class Revista
-     */
-    public Revista()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+  public Revista(String pTitulo, String pEditor, int pIssn, int pStock) {
+    setTitulo(pTitulo);
+    setEditor(pEditor);
+    setIssn(pIssn);
+    setStock(pStock);
+  }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+  public String getTitulo() {
+    return titulo;
+  }
+
+  public void setTitulo(String pTitulo) {
+    titulo = pTitulo;
+  }
+
+  public String getEditor() {
+    return editor;
+  }
+
+  public void setEditor(String pEditor) {
+    editor = pEditor;
+  }
+
+  public int getIssn() {
+    return issn;
+  }
+
+  public void setIssn(int pIssn) {
+    issn = pIssn;
+  }
+
+  public int getStock() {
+    return stock;
+  }
+
+  public void setStock(int pStock) {
+    stock = pStock;
+  }
 }
