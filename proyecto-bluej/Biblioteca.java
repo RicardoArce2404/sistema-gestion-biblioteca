@@ -1,33 +1,40 @@
-
 /**
- * Write a description of class Biblioteca here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Representación de una biblioteca física.
  */
-public class Biblioteca
-{
-    // instance variables - replace the example below with your own
-    private int x;
+public class Biblioteca {
+  private String nombre;
+  private String direccion;
+  private int telefono;
+  private Catalogo catalogoLibros;
+  private Catalogo catalogoRevistas;
 
-    /**
-     * Constructor for objects of class Biblioteca
-     */
-    public Biblioteca()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+  public Biblioteca(String pNombre, String pDireccion, int pTelefono) {
+    setNombre(pNombre);
+    setDireccion(pDireccion);
+    setTelefono(pTelefono);
+  }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+  public String getNombre() {
+    return nombre;
+  }
+
+  public void setNombre(String pNombre) {
+    nombre = pNombre;
+  }
+
+  public String getDireccion() {
+    return direccion;
+  }
+
+  public void setDireccion(String pDireccion) {
+    direccion = pDireccion;
+  }
+
+  public int getTelefono() {
+    return telefono;
+  }
+
+  public void setTelefono(int pTelefono) {
+    telefono = pTelefono;
+  }
 }
