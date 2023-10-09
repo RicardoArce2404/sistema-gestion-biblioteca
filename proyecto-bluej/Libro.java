@@ -1,33 +1,48 @@
-
 /**
- * Write a description of class Libro here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Representación de un libro de una biblioteca
  */
-public class Libro
-{
-    // instance variables - replace the example below with your own
-    private int x;
+public class Libro {
+  private String titulo;
+  private String autor;
+  private int isbn;
+  private int stock;
 
-    /**
-     * Constructor for objects of class Libro
-     */
-    public Libro()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+  public Libro(String pTitulo, String pAutor, int pIsbn, int pStock) {
+    setTitulo(pTitulo);
+    setAutor(pAutor);
+    setIsbn(pIsbn);
+    setStock(pStock);
+  }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+  public String getTitulo() {
+    return titulo;
+  }
+
+  public void setTitulo(String pTitulo) {
+    titulo = pTitulo;
+  }
+
+  public String getAutor() {
+    return autor;
+  }
+
+  public void setAutor(String pAutor) {
+    autor = pAutor;
+  }
+
+  public int getIsbn() {
+    return isbn;
+  }
+
+  public void setIsbn(int pIsbn) {
+    isbn = pIsbn;
+  }
+
+  public int getStock() {
+    return stock;
+  }
+
+  public void setStock(int pStock) {
+    stock = pStock;
+  }
 }
