@@ -1,33 +1,59 @@
-
 /**
- * Write a description of class Usuario here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Representación de un usuario de una biblioteca.
  */
-public class Usuario
-{
-    // instance variables - replace the example below with your own
-    private int x;
+public class Usuario {
+  private String nombre;
+  private String direccion;
+  private String email;
+  private int telefono;
+  private int identificacion;
 
-    /**
-     * Constructor for objects of class Usuario
-     */
-    public Usuario()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+  public Usuario(String pNombre, String pDireccion, String pEmail,
+                 int pTelefono, int pIdentificacion) {
+    setNombre(pNombre);
+    setDireccion(pDireccion);
+    setEmail(pEmail);
+    setTelefono(pTelefono);
+    setIdentificacion(pIdentificacion);
+  }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+  public String getNombre() {
+    return nombre;
+  }
+
+  public void setNombre(String pNombre) {
+    nombre = pNombre;
+  }
+
+  public String getDireccion() {
+    return direccion;
+  }
+
+  public void setDireccion(String pDireccion) {
+    direccion = pDireccion;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String pEmail) {
+    email = pEmail;
+  }
+
+  public int getTelefono() {
+    return telefono;
+  }
+
+  public void setTelefono(int pTelefono) {
+    telefono = pTelefono;
+  }
+
+  public int getIdentificacion() {
+    return identificacion;
+  }
+
+  public void setIdentificacion(int pIdentificacion) {
+    identificacion = pIdentificacion;
+  }
 }
