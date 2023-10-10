@@ -33,8 +33,12 @@ public class CatalogoRevistas {
     nombre = pNombre;
   }
 
-  public int getTotlRevistas() {
+  public int getTotalRevistas() {
     return totalRevistas;
+  }
+
+  public ArrayList<Revista> getRevistas() {
+    return revistas;
   }
 
   public String toString() {

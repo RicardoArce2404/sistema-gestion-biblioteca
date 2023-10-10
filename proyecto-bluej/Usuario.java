@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Representación de un usuario de una biblioteca.
  */
@@ -7,6 +9,8 @@ public class Usuario {
   private String email;
   private int telefono;
   private int identificacion;
+  private ArrayList<Libro> librosPrestados;
+  private ArrayList<Revista> revistasPrestadas;
 
   public Usuario(String pNombre, String pDireccion, String pEmail,
                  int pTelefono, int pIdentificacion) {
@@ -15,6 +19,22 @@ public class Usuario {
     setEmail(pEmail);
     setTelefono(pTelefono);
     setIdentificacion(pIdentificacion);
+  }
+
+  public void darLibro(Libro pLibro) {
+    librosPrestados.add(pLibro);
+  }
+
+  public void quitarLibro(Libro pLibro) {
+    librosPrestados.remove(pLibro);
+  }
+
+  public void darRevista(Revista pRevista) {
+    revistasPrestadas.add(pRevista);
+  }
+
+  public void quitarRevista(Revista pRevista) {
+    revistasPrestadas.remove(pRevista);
   }
 
   public String getNombre() {
@@ -52,6 +72,15 @@ public class Usuario {
   public int getIdentificacion() {
     return identificacion;
   }
+
+  public ArrayList<Libro> getLibrosPrestados() {
+    return librosPrestados;
+  }
+
+  public ArrayList<Revista> getRevistasPrestadas() {
+    return revistasPrestadas;
+  }
+
 
   public void setIdentificacion(int pIdentificacion) {
     identificacion = pIdentificacion;
