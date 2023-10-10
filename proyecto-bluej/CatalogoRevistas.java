@@ -36,4 +36,16 @@ public class CatalogoRevistas {
   public int getTotlRevistas() {
     return totalRevistas;
   }
+
+  public String toString() {
+    String n = "\n";
+    String info = "";
+    info += "Nombre: " + nombre + n;
+    info += "Total de revistas: " + totalRevistas + n;
+    info += "Revistas:" + n;
+    for (Revista revista : revistas) {
+      info += "- " + revista.getTitulo() + n;
+    }
+    return info;
+  }
 }

@@ -56,4 +56,15 @@ public class Usuario {
   public void setIdentificacion(int pIdentificacion) {
     identificacion = pIdentificacion;
   }
+
+  public String toString() {
+    String n = "\n";
+    String info = "";
+    info += "Nombre: " + nombre + n;
+    info += "Dirección: " + direccion + n;
+    info += "Identificación: " + identificacion + n;
+    info += "Número telefónico: " + telefono + n;
+    info += "Correo electrónico: " + email + n;
+    return info;
+  }
 }

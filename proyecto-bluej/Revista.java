@@ -52,4 +52,14 @@ public class Revista {
   public void setStock(int pStock) {
     stock = pStock;
   }
+
+  public String toString() {
+    String n = "\n";
+    String info = "";
+    info += "Título: " + titulo + n;
+    info += "Editor: " + editor + n;
+    info += "ISSN: " + issn + n;
+    info += "Unidades disponibles: " + stock + n;
+    return info;
+  }
 }

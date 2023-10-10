@@ -36,4 +36,20 @@ public class CatalogoLibros {
   public int getTotalLibros() {
     return totalLibros;
   }
+
+  public ArrayList<Libro> getLibros() {
+    return libros;
+  }
+
+  public String toString() {
+    String n = "\n";
+    String info = "";
+    info += "Nombre: " + nombre + n;
+    info += "Total de libros: " + totalLibros + n;
+    info += "Libros:" + n;
+    for (Libro libro : libros) {
+      info += "- " + libro.getTitulo() + n;
+    }
+    return info;
+  }
 }

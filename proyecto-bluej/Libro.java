@@ -52,4 +52,14 @@ public class Libro {
   public void setStock(int pStock) {
     stock = pStock;
   }
+
+  public String toString() {
+    String n = "\n";
+    String info = "";
+    info += "Título: " + titulo + n;
+    info += "Autor: " + autor + n;
+    info += "ISBN: " + isbn + n;
+    info += "Unidades disponibles: " + stock + n;
+    return info;
+  }
 }
