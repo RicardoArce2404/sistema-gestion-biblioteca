@@ -7,11 +7,18 @@ public class Libro {
   private int isbn;
   private int stock;
 
-  public Libro(String pTitulo, String pAutor, int pIsbn, int pStock) {
+  /**
+   * Constructor de la clase Libro.
+   * @param pTitulo Título del libro.
+   * @param pAutor Autor del libro.
+   * @param pIsbn ISBN del libro.
+   * @param pStockInicial Cantidad de unidades disponibles inicialmente del libro.
+   */
+  public Libro(String pTitulo, String pAutor, int pIsbn, int pStockInicial) {
     setTitulo(pTitulo);
     setAutor(pAutor);
     setIsbn(pIsbn);
-    setStock(pStock);
+    setStock(pStockInicial);
   }
 
   public String getTitulo() {

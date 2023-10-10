@@ -8,10 +8,18 @@ public class CatalogoLibros {
   private int totalLibros;
   private ArrayList<Libro> libros;
 
+  /**
+   * Constructor de la clase CatalogoLibros.
+   * @param pNombre Nombre del catálogo.
+   */
   public CatalogoLibros(String pNombre) {
     setNombre(pNombre);
   }
 
+  /**
+   * Agrega un libro al catálogo.
+   * @param pLibro Libro a agregar.
+   */
   public void agregarLibro(Libro pLibro) {
     libros.add(pLibro);
     totalLibros++;

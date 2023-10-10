@@ -7,11 +7,18 @@ public class Revista {
   private int issn;
   private int stock;
 
-  public Revista(String pTitulo, String pEditor, int pIssn, int pStock) {
+  /**
+   * Constructor de la clase Revista.
+   * @param pTitulo Título de la revista.
+   * @param pEditor Autor de la revista.
+   * @param pIssn ISSN de la revista.
+   * @param pStockInicial Cantidad de unidades disponibles inicialmente de la revista.
+   */
+  public Revista(String pTitulo, String pEditor, int pIssn, int pStockInicial) {
     setTitulo(pTitulo);
     setEditor(pEditor);
     setIssn(pIssn);
-    setStock(pStock);
+    setStock(pStockInicial);
   }
 
   public String getTitulo() {

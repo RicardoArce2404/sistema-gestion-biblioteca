@@ -8,6 +8,12 @@ public class Biblioteca {
   private CatalogoLibros catalogoLibros;
   private CatalogoRevistas catalogoRevistas;
 
+  /**
+   * Constructor de la clase Biblioteca.
+   * @param pNombre Nombre de la biblioteca.
+   * @param pDireccion Dirección de la biblioteca.
+   * @param pTelefono Número de teléfono de la biblioteca.
+   */
   public Biblioteca(String pNombre, String pDireccion, int pTelefono) {
     setNombre(pNombre);
     setDireccion(pDireccion);

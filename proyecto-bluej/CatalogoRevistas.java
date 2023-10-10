@@ -8,10 +8,18 @@ public class CatalogoRevistas {
   private int totalRevistas;
   private ArrayList<Revista> revistas;
 
+  /**
+   * Constructor de la clase CatalogoRevistas.
+   * @param pNombre Nombre del catálogo.
+   */
   public CatalogoRevistas(String pNombre) {
     setNombre(pNombre);
   }
 
+  /**
+   * Agrega una revista al catálogo.
+   * @param pNombre Revista a agregar.
+   */
   public void agregarRevista(Revista pRevista) {
     revistas.add(pRevista);
     totalRevistas++;
